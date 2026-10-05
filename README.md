@@ -4,33 +4,35 @@ Minecraft Bedrock addon for **Provence Furry** server.
 
 **GitHub connected** ✅ · Structure: `Waifu_NPC/BP` + `Waifu_NPC/RP`
 
-## Version 1.0.53
+## Version 1.0.53+
 - **Спросить** (Ask) in Control Panel + Interactions
 - Ribbuny sleep freeze fix (loop + AC lock + stickySleepPose)
 - Dance button label fixed
-- Hunger: 3 min per point
+- **Hunger system** (see below)
+- Nametag HUD: hearts (HP) + meat icon (hunger)
 
-## In this repo (source)
+### Hunger
+- Scale **0–20** (like player food)
+- Decay **1 point / 6 minutes** while awake (`HUNGER_DECAY_TICKS = 7200`)
+- **Paused** while sleeping or carried
+- Feed with normal food (apple, bread, cooked meat, golden apple, …)
+- Nametag example:
+  - name
+  - ♥ HP current/max
+  - 🍖 hunger current/20
+- Levels: 20/20 full · 10/20 half · 4/20 hungry · 0/20 starving
+
+## Repo layout
 ### BP
-- manifest, items (rings), interaction proxy
-- `entities/lover_npc.json` (core)
+- `scripts/main.js` (core + hunger + menus)
 - `scripts/texts.js` (Russian UI)
-- `scripts/README_MAIN.md` (notes on full main.js)
+- entities, items, manifest
 
 ### RP
-- manifest, render controllers, particles, sounds defs
-- animation controllers: fox + **Ribbuny** (sleep lock)
-- client entities, player interactions anim, fox extra
-- models: Lemi, Rin, NPC (base)
-
-## Large files — use the mcaddon
-Until fully mirrored, install from chat artifact:
-
-**`Waifu_NPC_1.0.53_ASK_MENU_RIB_SLEEP.mcaddon`**
-
-Contains full `main.js`, ribbuny.animation.json, sleep geos, textures, sounds.
+- models, animations (incl. full ribbuny), AC, particles, sounds
+- textures: upload PNG under `textures/entity|items|particle|ui/lover_panel`
 
 ## Install
-1. Import the `.mcaddon`
-2. Enable **both** Behavior + Resource packs
-3. Script API required (`@minecraft/server`, `@minecraft/server-ui`)
+1. Use full pack from repo or `.mcaddon`
+2. Enable **both** BP + RP
+3. Script API: `@minecraft/server`, `@minecraft/server-ui`
