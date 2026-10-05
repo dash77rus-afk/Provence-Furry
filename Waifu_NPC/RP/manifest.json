@@ -1,17 +1,17 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Waifu Provence Furry",
-    "description": "Waifu Provence Furry — companion NPC pack (hunger, Ribbuny, Lemi, Rin).",
+    "name": "Waifu Provence Furry RP v1.0.55",
+    "description": "[RP] v1.0.55 | models textures animations Ribbuny Lemi Rin",
     "uuid": "77648de4-ec56-4700-be55-18a0cfacbe5d",
-    "version": [1, 0, 53],
+    "version": [1, 0, 55],
     "min_engine_version": [1, 21, 0]
   },
   "modules": [
     {
       "type": "resources",
       "uuid": "594bdf1b-4b19-4316-a371-4e51485228ed",
-      "version": [1, 0, 53]
+      "version": [1, 0, 55]
     }
   ]
 }
