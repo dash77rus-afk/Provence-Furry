@@ -1183,9 +1183,11 @@ function updateOwnedNpcNameTag(npc, playerOrName) {
 
   const hp = getNpcHealthValues(npc);
   const hearts = hpHearts(hp.current, hp.max);
+  const hunger = getNpcHunger(npc);
   try {
     npc.nameTag = `§d${name}
-§c${hearts} §f${hp.current}/${hp.max}`;
+§c${hearts} §f${hp.current}/${hp.max}
+§6🍖 §f${hunger}/${HUNGER_MAX}`;
   } catch (e) {}
 }
 
