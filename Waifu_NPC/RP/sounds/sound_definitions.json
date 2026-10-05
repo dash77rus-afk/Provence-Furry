@@ -1,0 +1,27 @@
+{
+  "quan.lover_npc.hello": {
+    "sounds": ["sounds/lover_npc/hello_1"]
+  },
+  "quan.lover_npc.talk": {
+    "sounds": ["sounds/lover_npc/talk_1"]
+  },
+  "quan.lover_npc.gift": {
+    "sounds": ["sounds/lover_npc/gift_1"]
+  },
+  "quan.lover_npc.sleep": {
+    "sounds": ["sounds/lover_npc/sleep_1"]
+  },
+  "quan.lover_npc.wake": {
+    "sounds": ["sounds/lover_npc/wake_1"]
+  },
+  "quan.lover_npc.hurt": {
+    "sounds": ["sounds/lover_npc/hurt_1"]
+  },
+  "quan.lover_npc.free_idle": {
+    "sounds": [
+      "sounds/lover_npc/free_idle_1",
+      "sounds/lover_npc/free_idle_2",
+      "sounds/lover_npc/free_idle_3"
+    ]
+  }
+}

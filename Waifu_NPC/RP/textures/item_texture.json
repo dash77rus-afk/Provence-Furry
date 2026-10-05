@@ -1,0 +1,15 @@
+{
+  "resource_pack_name": "Quan Waifu NPC RP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "love_ring": {
+      "textures": "textures/items/love_ring"
+    },
+    "bonded_love_ring": {
+      "textures": "textures/items/bonded_love_ring"
+    },
+    "broken_love_ring": {
+      "textures": "textures/items/broken_love_ring"
+    }
+  }
+}
