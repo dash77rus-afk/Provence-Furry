@@ -2,6 +2,8 @@
 
 Minecraft Bedrock addon for **Provence Furry** server.
 
+**Repo is connected and receiving updates** ✅
+
 ## Version
 **1.0.53** — Ask menu + Ribbuny sleep fix
 
@@ -17,11 +19,21 @@ Waifu_NPC/
   RP/   # Resource pack (models, animations, textures, sounds)
 ```
 
-## Install
-1. Build `.mcaddon` from BP + RP folders, or use the release artifact
-2. Import into Minecraft Bedrock
-3. Enable both packs in world settings
+## Currently in this repo
+- BP: manifest, items (rings), interaction proxy entity, texts.js
+- RP: manifest, Ribbuny + fox animation controllers, particles, sounds defs, item_texture, proxy client entity
+
+## Still uploading (next commits)
+- `BP/scripts/main.js` (core script ~255KB)
+- BP entity JSONs (lover_npc, sleep variants)
+- RP animations, geo models, textures PNG, sounds OGG
+
+## Install (for now)
+Use the built `.mcaddon` from chat until full source is mirrored:
+`Waifu_NPC_1.0.53_ASK_MENU_RIB_SLEEP.mcaddon`
+
+Then enable **both** BP + RP in world settings.
 
 ## Notes
-- Binary assets (PNG, OGG) may be added in follow-up commits
-- Script API / `@minecraft/server` required
+- Script API `@minecraft/server` + `@minecraft/server-ui` required
+- Min engine 1.21+
