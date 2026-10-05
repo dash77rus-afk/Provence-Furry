@@ -1,0 +1,58 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Waifu Provence Furry",
+    "description": "Waifu Provence Furry — companion NPC pack (hunger, Ribbuny, Lemi, Rin).",
+    "uuid": "9c3d666d-ecc0-46cd-9f53-ce38fb8c1fe4",
+    "version": [
+      1,
+      0,
+      53
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "dce48db0-0000-4000-8000-000000000001",
+      "version": [
+        1,
+        0,
+        53
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "dce48db0-0000-4000-8000-000000000002",
+      "version": [
+        1,
+        0,
+        53
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "77648de4-ec56-4700-be55-18a0cfacbe5d",
+      "version": [
+        1,
+        0,
+        53
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.14.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.3.0"
+    }
+  ]
+}
