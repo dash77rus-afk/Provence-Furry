@@ -169,7 +169,7 @@ const UI_ICON = {
 
 // --- Hunger system (Waifu Provence Furry) ---
 const HUNGER_MAX = 20;
-const HUNGER_DECAY_TICKS = 3600; // ~3 min per point when awake
+const HUNGER_DECAY_TICKS = 7200; // ~6 min per point when awake
 const lastHungerDecayTick = new Map();
 
 function getNpcHunger(npc) {
