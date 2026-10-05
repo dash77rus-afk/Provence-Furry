@@ -1,0 +1,1533 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.lover_npc.new": {
+      "loop": true
+    },
+    "animation.lover_npc.idle": {
+      "loop": true,
+      "animation_length": 2.5,
+      "bones": {
+        "head": {
+          "rotation": [
+            "Math.sin(query.anim_time * 70) * 4",
+            "Math.sin(query.anim_time * 45) * 2.4",
+            0
+          ]
+        },
+        "long_hair": {
+          "rotation": [
+            "Math.sin(query.anim_time * 70) * 0.6",
+            0,
+            0
+          ]
+        },
+        "wings": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 90) * 3",
+            0
+          ]
+        },
+        "special_parts": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 40) * 2",
+            0
+          ]
+        },
+        "RightSideHair": {
+          "relative_to": {
+            "rotation": "entity"
+          },
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0.01
+            ],
+            "0.5": [
+              -7.5,
+              0,
+              0
+            ],
+            "1.0": [
+              -2.5,
+              0,
+              0
+            ],
+            "1.5": [
+              -7.5,
+              0,
+              0
+            ],
+            "2.0": [
+              0,
+              0,
+              0.01
+            ]
+          }
+        },
+        "LeftSideHair": {
+          "relative_to": {
+            "rotation": "entity"
+          },
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0.01
+            ],
+            "0.5": [
+              -7.5,
+              0,
+              0
+            ],
+            "1.0": [
+              -2.5,
+              0,
+              0
+            ],
+            "1.5": [
+              -10,
+              0,
+              0
+            ],
+            "2.0": [
+              -2.5,
+              0,
+              0
+            ]
+          }
+        },
+        "BaseHair": {
+          "relative_to": {
+            "rotation": "entity"
+          },
+          "rotation": [
+            0,
+            0,
+            0.01
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 22) * 8.8 + 12",
+            "Math.sin(query.anim_time * 18) * 16",
+            "Math.sin(query.anim_time * 20) * 7.2"
+          ]
+        },
+        "tail_wolf": {
+          "rotation": [
+            "40 + Math.sin(query.anim_time * 24) * 8.0",
+            "Math.sin(query.anim_time * 17) * 11.2",
+            "Math.sin(query.anim_time * 21) * 5.6"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16) * 10",
+            "Math.sin(query.anim_time * 11) * 4.0",
+            "Math.sin(query.anim_time * 19) * 11.0"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16 + 90) * 10",
+            "Math.sin(query.anim_time * 11 + 40) * 4.0",
+            "Math.sin(query.anim_time * 19 + 180) * 11.0"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.walk": {
+      "loop": true,
+      "animation_length": 1.25,
+      "bones": {
+        "rightArm": {
+          "rotation": [
+            "Math.sin(query.anim_time * 288) * 24",
+            0,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            "Math.sin(query.anim_time * 288 + 180) * 24",
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            "Math.sin(query.anim_time * 288 + 180) * 26",
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            "Math.sin(query.anim_time * 288) * 26",
+            0,
+            0
+          ]
+        },
+        "waist": {
+          "rotation": [
+            "Math.sin(query.anim_time * 288) * 1.2",
+            0,
+            0
+          ]
+        },
+        "long_hair": {
+          "rotation": [
+            "Math.sin(query.anim_time * 288) * 0.9",
+            0,
+            0
+          ]
+        },
+        "wings": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 288) * 3",
+            0
+          ]
+        },
+        "RightSideHair": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.4583": [
+              -7.5,
+              0,
+              0
+            ],
+            "0.9583": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "LeftSideHair": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.4583": [
+              -7.5,
+              0,
+              0
+            ],
+            "0.9583": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "HOUBAI": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1667": [
+              15,
+              0,
+              0
+            ],
+            "0.3333": [
+              22.5,
+              0,
+              0
+            ],
+            "0.5": [
+              12.5,
+              0,
+              0
+            ],
+            "0.625": [
+              2.5,
+              0,
+              0
+            ],
+            "0.75": [
+              12.5,
+              0,
+              0
+            ],
+            "0.875": [
+              20,
+              0,
+              0
+            ],
+            "1.0833": [
+              17.5,
+              0,
+              0
+            ],
+            "1.1667": [
+              10,
+              0,
+              0
+            ],
+            "1.2083": [
+              5,
+              0,
+              0
+            ]
+          }
+        },
+        "QIANBAI": {
+          "rotation": {
+            "0.0": [
+              5,
+              0,
+              0
+            ],
+            "0.1667": [
+              -10,
+              0,
+              0
+            ],
+            "0.3333": [
+              -17.5,
+              0,
+              0
+            ],
+            "0.5": [
+              -7.5,
+              0,
+              0
+            ],
+            "0.625": [
+              2.5,
+              0,
+              0
+            ],
+            "0.75": [
+              -7.5,
+              0,
+              0
+            ],
+            "0.875": [
+              -15,
+              0,
+              0
+            ],
+            "1.0833": [
+              -12.5,
+              0,
+              0
+            ],
+            "1.1667": [
+              -5,
+              0,
+              0
+            ],
+            "1.2083": [
+              2.5,
+              0,
+              0
+            ]
+          }
+        },
+        "LeftLowerLeg": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 22) * 6.6000000000000005 + 12",
+            "Math.sin(query.anim_time * 18) * 12",
+            "Math.sin(query.anim_time * 20) * 5.4"
+          ]
+        },
+        "tail_wolf": {
+          "rotation": [
+            "40 + Math.sin(query.anim_time * 24) * 6.0",
+            "Math.sin(query.anim_time * 17) * 8.399999999999999",
+            "Math.sin(query.anim_time * 21) * 4.199999999999999"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16) * 7",
+            "Math.sin(query.anim_time * 11) * 2.8000000000000003",
+            "Math.sin(query.anim_time * 19) * 7.700000000000001"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16 + 90) * 7",
+            "Math.sin(query.anim_time * 11 + 40) * 2.8000000000000003",
+            "Math.sin(query.anim_time * 19 + 180) * 7.700000000000001"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.sit": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "chibiwaifu": {
+          "position": [
+            0,
+            -5.5,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            -5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "Math.sin(query.anim_time * 70) * 2",
+            "Math.sin(query.anim_time * 45) * 1.2",
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -18,
+            0,
+            -8
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -18,
+            0,
+            8
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -78,
+            -4,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -78,
+            4,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 22) * 5.5 + 12",
+            "Math.sin(query.anim_time * 18) * 10",
+            "Math.sin(query.anim_time * 20) * 4.5"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16) * 6",
+            "Math.sin(query.anim_time * 11) * 2.4000000000000004",
+            "Math.sin(query.anim_time * 19) * 6.6000000000000005"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16 + 90) * 6",
+            "Math.sin(query.anim_time * 11 + 40) * 2.4000000000000004",
+            "Math.sin(query.anim_time * 19 + 180) * 6.6000000000000005"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.sleep": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "chibiwaifu": {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            1.2,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            10,
+            20,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 8) * 5 + 10",
+            "Math.sin(query.anim_time * 6) * 8",
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5) * 3"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 40) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5 + 90) * 3"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.dance": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "waist": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 360) * 8"
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 360) * 10",
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            "Math.sin(query.anim_time * 360) * 55 - 20",
+            0,
+            12
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            "Math.sin(query.anim_time * 360 + 180) * 55 - 20",
+            0,
+            -12
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            "Math.sin(query.anim_time * 360 + 180) * 25",
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            "Math.sin(query.anim_time * 360) * 25",
+            0,
+            0
+          ]
+        },
+        "wings": {
+          "rotation": [
+            0,
+            "Math.sin(query.anim_time * 360) * 8",
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "35 + Math.sin(query.anim_time * 60) * 14",
+            0,
+            "Math.sin(query.anim_time * 45) * 8"
+          ]
+        },
+        "tail_wolf": {
+          "rotation": [
+            "45 + Math.sin(query.anim_time * 60) * 12",
+            0,
+            "Math.sin(query.anim_time * 45) * 7"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 30) * 7"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 30 + 180) * 7"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.hug": {
+      "loop": true,
+      "bones": {
+        "leftArm": {
+          "rotation": [
+            -85,
+            -40,
+            -15
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -85,
+            40,
+            15
+          ]
+        },
+        "body": {
+          "rotation": [
+            8,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            5,
+            0,
+            0
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 10) * 2.0"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 10 + 180) * 2.0"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.heart": {
+      "loop": true,
+      "animation_length": 1.2917,
+      "bones": {
+        "head": {
+          "rotation": [
+            "Math.sin(query.anim_time * 240) * 6 - 6",
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              -104.7105,
+              33.7039,
+              54.5723
+            ],
+            "1.0": [
+              -36.3561,
+              -18.1164,
+              -15.3393
+            ]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              -72.1005,
+              -39.8398,
+              -79.7
+            ],
+            "1.0": [
+              -34.3128,
+              7.589,
+              18.8279
+            ]
+          }
+        },
+        "rightLeg": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "Y2": {
+          "relative_to": {
+            "rotation": "entity"
+          },
+          "rotation": [
+            0,
+            0,
+            0.01
+          ]
+        },
+        "LeftForeArm": {
+          "rotation": {
+            "0.0": [
+              -30,
+              0,
+              0
+            ],
+            "1.0": [
+              -2.5,
+              0,
+              0
+            ]
+          }
+        },
+        "RightForeArm": {
+          "rotation": {
+            "0.0": [
+              -20,
+              0,
+              0
+            ],
+            "1.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.lover_npc.sleep_back": {
+      "loop": true,
+      "bones": {
+        "chibiwaifu": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            1.2,
+            0.5
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5) * 3"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 40) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5 + 90) * 3"
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 8) * 5 + 10",
+            "Math.sin(query.anim_time * 6) * 8",
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.sleep_curl": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "chibiwaifu": {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            1.2,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            10,
+            20,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 8) * 5 + 10",
+            "Math.sin(query.anim_time * 6) * 8",
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5) * 3"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 40) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5 + 90) * 3"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.sleep_hugpose": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "chibiwaifu": {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            1.2,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            10,
+            20,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 8) * 5 + 10",
+            "Math.sin(query.anim_time * 6) * 8",
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5) * 3"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 40) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5 + 90) * 3"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.run": {
+      "loop": true,
+      "animation_length": 0.55,
+      "bones": {
+        "waist": {
+          "rotation": [
+            "Math.sin(query.anim_time * 650) * 2.0",
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "Math.sin(query.anim_time * 70) * 3",
+            "Math.sin(query.anim_time * 45) * 1.7999999999999998",
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            "Math.sin(query.anim_time * 650) * 42 - 7",
+            0,
+            3
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            "Math.sin(query.anim_time * 650 + 180) * 42 - 7",
+            0,
+            -3
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            "Math.sin(query.anim_time * 650 + 180) * 40",
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "relative_to": {
+            "rotation": "entity"
+          },
+          "rotation": [
+            "Math.sin(query.anim_time * 650) * 40",
+            0,
+            0
+          ]
+        },
+        "long_hair": {
+          "rotation": [
+            "Math.sin(query.anim_time * 650) * 1.2",
+            0,
+            0
+          ]
+        },
+        "HOUBAI": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0417": [
+              12.5,
+              0,
+              0
+            ],
+            "0.0833": [
+              22.5,
+              0,
+              0
+            ],
+            "0.125": [
+              30,
+              0,
+              0
+            ],
+            "0.2083": [
+              25,
+              0,
+              0
+            ],
+            "0.25": [
+              17.5,
+              0,
+              0
+            ],
+            "0.2917": [
+              7.5,
+              0,
+              0
+            ],
+            "0.3333": [
+              22.5,
+              0,
+              0
+            ],
+            "0.375": [
+              30,
+              0,
+              0
+            ],
+            "0.4167": [
+              37.5,
+              0,
+              0
+            ],
+            "0.5": [
+              25,
+              0,
+              0
+            ],
+            "0.5417": [
+              2.5,
+              0,
+              0
+            ]
+          }
+        },
+        "QIANBAI": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.0417": [
+              -10,
+              0,
+              0
+            ],
+            "0.0833": [
+              -25,
+              0,
+              0
+            ],
+            "0.125": [
+              -32.5,
+              0,
+              0
+            ],
+            "0.2083": [
+              -25,
+              0,
+              0
+            ],
+            "0.25": [
+              -12.5,
+              0,
+              0
+            ],
+            "0.2917": [
+              0,
+              0,
+              0
+            ],
+            "0.3333": [
+              -20,
+              0,
+              0
+            ],
+            "0.375": [
+              -25,
+              0,
+              0
+            ],
+            "0.4167": [
+              -30,
+              0,
+              0
+            ],
+            "0.5": [
+              -15,
+              0,
+              0
+            ],
+            "0.5417": [
+              2.5,
+              0,
+              0
+            ]
+          }
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 22) * 7.700000000000001 + 12",
+            "Math.sin(query.anim_time * 18) * 14",
+            "Math.sin(query.anim_time * 20) * 6.3"
+          ]
+        },
+        "tail_wolf": {
+          "rotation": [
+            "40 + Math.sin(query.anim_time * 24) * 7.0",
+            "Math.sin(query.anim_time * 17) * 9.799999999999999",
+            "Math.sin(query.anim_time * 21) * 4.8999999999999995"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16) * 9",
+            "Math.sin(query.anim_time * 11) * 3.6",
+            "Math.sin(query.anim_time * 19) * 9.9"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 16 + 90) * 9",
+            "Math.sin(query.anim_time * 11 + 40) * 3.6",
+            "Math.sin(query.anim_time * 19 + 180) * 9.9"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.sleep_entity_idle": {
+      "loop": true,
+      "animation_length": 2,
+      "bones": {
+        "head": {
+          "rotation": [
+            "Math.sin(query.anim_time * 24) * 0.5",
+            0,
+            0
+          ]
+        },
+        "long_hair": {
+          "rotation": [
+            "Math.sin(query.anim_time * 20) * 0.2",
+            0,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 8) * 5 + 10",
+            "Math.sin(query.anim_time * 6) * 8",
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        },
+        "tail_wolf": {
+          "rotation": [
+            "Math.sin(query.anim_time * 10) * 1.2",
+            0,
+            "Math.sin(query.anim_time * 8) * 0.8"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5) * 3"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 40) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5 + 90) * 3"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.blink": {
+      "loop": true,
+      "animation_length": 5,
+      "bones": {
+        "LeftEyelid": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "3.6": [
+              0,
+              0,
+              0
+            ],
+            "3.68": [
+              75,
+              0,
+              0
+            ],
+            "3.78": [
+              75,
+              0,
+              0
+            ],
+            "3.88": [
+              0,
+              0,
+              0
+            ],
+            "5.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "RightEyelid": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "3.6": [
+              0,
+              0,
+              0
+            ],
+            "3.68": [
+              75,
+              0,
+              0
+            ],
+            "3.78": [
+              75,
+              0,
+              0
+            ],
+            "3.88": [
+              0,
+              0,
+              0
+            ],
+            "5.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.lover_npc.sleep_side": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "chibiwaifu": {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            1.2,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            10,
+            20,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 8) * 5 + 10",
+            "Math.sin(query.anim_time * 6) * 8",
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5) * 3"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 40) * 4 - 8",
+            0,
+            "Math.sin(query.anim_time * 5 + 90) * 3"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.carry": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "chibiwaifu": {
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            2.0,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            8,
+            15,
+            0
+          ]
+        },
+        "leftArm": {
+          "rotation": [
+            -70,
+            5,
+            -10
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -70,
+            -5,
+            10
+          ]
+        },
+        "leftLeg": {
+          "rotation": [
+            -85,
+            8,
+            0
+          ]
+        },
+        "rightLeg": {
+          "rotation": [
+            -85,
+            -8,
+            0
+          ]
+        },
+        "tail_b": {
+          "rotation": [
+            "Math.sin(query.anim_time * 10) * 5 + 12",
+            "Math.sin(query.anim_time * 8) * 8",
+            "Math.sin(query.anim_time * 9) * 4"
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6) * 3",
+            0,
+            "Math.sin(query.anim_time * 7) * 4"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            "Math.sin(query.anim_time * 6 + 90) * 3",
+            0,
+            "Math.sin(query.anim_time * 7 + 180) * 4"
+          ]
+        }
+      }
+    },
+    "animation.lover_npc.kiss": {
+      "loop": true,
+      "bones": {
+        "leftArm": {
+          "rotation": [
+            -85,
+            -40,
+            -15
+          ]
+        },
+        "rightArm": {
+          "rotation": [
+            -85,
+            40,
+            15
+          ]
+        },
+        "body": {
+          "rotation": [
+            8,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            5,
+            0,
+            0
+          ]
+        },
+        "earLeft": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 10) * 2.0"
+          ]
+        },
+        "earRight": {
+          "rotation": [
+            0,
+            0,
+            "Math.sin(query.anim_time * 10 + 180) * 2.0"
+          ]
+        }
+      }
+    }
+  }
+}
