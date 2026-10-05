@@ -57,16 +57,16 @@
         "ribbuny_hit": "animation.ribunny.hit",
         "ribbuny_move": "controller.animation.lover_ribbuny.move",
         "ribbuny_petting": "animation.ribunny.petting",
-        "ribbuny_carry": "animation.palforge.ribunny.base_carried",
+        "ribbuny_carry": "animation.ribunny.rest02",
         "ribbuny_sleep_full": "animation.ribunny.sleep"
       },
       "scripts": {
         "animate": [
           {
-            "move": "query.mark_variant != 1"
+            "move": "query.property('quan:outfit') != 1"
           },
           {
-            "ribbuny_move": "query.mark_variant == 1"
+            "ribbuny_move": "query.property('quan:outfit') == 1"
           }
         ]
       },
