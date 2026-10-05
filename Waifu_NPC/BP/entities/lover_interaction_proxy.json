@@ -1,0 +1,62 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "quan:lover_interaction_proxy",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "lover_proxy"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.28,
+        "height": 0.28
+      },
+      "minecraft:health": {
+        "value": 999,
+        "max": 999
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "interact_text": "Open Waifu NPC Menu",
+            "swing": false,
+            "use_item": false,
+            "on_interact": {
+              "event": "quan:proxy_interact",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0,
+        "max": 1.0
+      }
+    },
+    "events": {
+      "quan:proxy_interact": {}
+    }
+  }
+}
