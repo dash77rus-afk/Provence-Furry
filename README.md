@@ -2,38 +2,35 @@
 
 Minecraft Bedrock addon for **Provence Furry** server.
 
-**Repo is connected and receiving updates** ✅
+**GitHub connected** ✅ · Structure: `Waifu_NPC/BP` + `Waifu_NPC/RP`
 
-## Version
-**1.0.53** — Ask menu + Ribbuny sleep fix
+## Version 1.0.53
+- **Спросить** (Ask) in Control Panel + Interactions
+- Ribbuny sleep freeze fix (loop + AC lock + stickySleepPose)
+- Dance button label fixed
+- Hunger: 3 min per point
 
-### Changelog 1.0.53
-- Added **Спросить** (Ask) to main panel and Interactions menu
-- Fixed Ribbuny sleep freeze (loop + animation controller lock)
-- Dance button label corrected
+## In this repo (source)
+### BP
+- manifest, items (rings), interaction proxy
+- `entities/lover_npc.json` (core)
+- `scripts/texts.js` (Russian UI)
+- `scripts/README_MAIN.md` (notes on full main.js)
 
-## Pack structure
-```
-Waifu_NPC/
-  BP/   # Behavior pack (entities, scripts, items)
-  RP/   # Resource pack (models, animations, textures, sounds)
-```
+### RP
+- manifest, render controllers, particles, sounds defs
+- animation controllers: fox + **Ribbuny** (sleep lock)
+- client entities, player interactions anim, fox extra
+- models: Lemi, Rin, NPC (base)
 
-## Currently in this repo
-- BP: manifest, items (rings), interaction proxy entity, texts.js
-- RP: manifest, Ribbuny + fox animation controllers, particles, sounds defs, item_texture, proxy client entity
+## Large files — use the mcaddon
+Until fully mirrored, install from chat artifact:
 
-## Still uploading (next commits)
-- `BP/scripts/main.js` (core script ~255KB)
-- BP entity JSONs (lover_npc, sleep variants)
-- RP animations, geo models, textures PNG, sounds OGG
+**`Waifu_NPC_1.0.53_ASK_MENU_RIB_SLEEP.mcaddon`**
 
-## Install (for now)
-Use the built `.mcaddon` from chat until full source is mirrored:
-`Waifu_NPC_1.0.53_ASK_MENU_RIB_SLEEP.mcaddon`
+Contains full `main.js`, ribbuny.animation.json, sleep geos, textures, sounds.
 
-Then enable **both** BP + RP in world settings.
-
-## Notes
-- Script API `@minecraft/server` + `@minecraft/server-ui` required
-- Min engine 1.21+
+## Install
+1. Import the `.mcaddon`
+2. Enable **both** Behavior + Resource packs
+3. Script API required (`@minecraft/server`, `@minecraft/server-ui`)
