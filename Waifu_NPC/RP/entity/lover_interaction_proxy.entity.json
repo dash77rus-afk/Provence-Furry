@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "quan:lover_interaction_proxy",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/lover_npc",
+        "lover_npc": "textures/entity/lover_npc",
+        "lover_fox": "textures/entity/lover_fox"
+      },
+      "geometry": {
+        "default": "geometry.lover_npc",
+        "lover_npc": "geometry.lover_npc",
+        "lover_fox": "geometry.lover_fox"
+      },
+      "render_controllers": [
+        "controller.render.lover_npc"
+      ],
+      "scripts": {},
+      "animations": {
+        "idle": "animation.lover_npc.idle"
+      }
+    }
+  }
+}
