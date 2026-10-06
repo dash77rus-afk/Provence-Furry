@@ -11,11 +11,21 @@
             "lover_fox_blink"
           ],
           "transitions": [
-            { "attack1": "query.property('quan:attack_phase') == 1" },
-            { "attack2": "query.property('quan:attack_phase') == 2" },
-            { "sleep": "query.property('quan:is_sleeping') == true" },
-            { "sit": "query.property('quan:is_sitting') == true" },
-            { "walk": "query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03" }
+            {
+              "attack1": "query.property('quan:attack_phase') == 1"
+            },
+            {
+              "attack2": "query.property('quan:attack_phase') == 2"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true"
+            },
+            {
+              "sit": "query.property('quan:is_sitting') == true"
+            },
+            {
+              "walk": "query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03"
+            }
           ]
         },
         "walk": {
@@ -25,11 +35,21 @@
             "lover_fox_blink"
           ],
           "transitions": [
-            { "attack1": "query.property('quan:attack_phase') == 1" },
-            { "attack2": "query.property('quan:attack_phase') == 2" },
-            { "sleep": "query.property('quan:is_sleeping') == true" },
-            { "sit": "query.property('quan:is_sitting') == true" },
-            { "stand": "query.property('quan:is_moving') != true && query.modified_move_speed <= 0.01 && query.ground_speed <= 0.03" }
+            {
+              "attack1": "query.property('quan:attack_phase') == 1"
+            },
+            {
+              "attack2": "query.property('quan:attack_phase') == 2"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true"
+            },
+            {
+              "sit": "query.property('quan:is_sitting') == true"
+            },
+            {
+              "stand": "query.property('quan:is_moving') != true && query.modified_move_speed <= 0.01 && query.ground_speed <= 0.03"
+            }
           ]
         },
         "sit": {
@@ -39,17 +59,31 @@
             "lover_fox_blink"
           ],
           "transitions": [
-            { "attack1": "query.property('quan:attack_phase') == 1" },
-            { "attack2": "query.property('quan:attack_phase') == 2" },
-            { "sleep": "query.property('quan:is_sleeping') == true" },
-            { "walk": "query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03" },
-            { "stand": "query.property('quan:is_sitting') != true" }
+            {
+              "attack1": "query.property('quan:attack_phase') == 1"
+            },
+            {
+              "attack2": "query.property('quan:attack_phase') == 2"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true"
+            },
+            {
+              "walk": "query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03"
+            },
+            {
+              "stand": "query.property('quan:is_sitting') != true"
+            }
           ]
         },
         "sleep": {
-          "animations": [ "lover_fox_sleep" ],
+          "animations": [
+            "lover_fox_sleep"
+          ],
           "transitions": [
-            { "stand": "query.property('quan:is_sleeping') != true" }
+            {
+              "stand": "query.property('quan:is_sleeping') != true"
+            }
           ]
         },
         "attack1": {
@@ -59,11 +93,21 @@
             "lover_fox_blink"
           ],
           "transitions": [
-            { "attack2": "query.property('quan:attack_phase') == 2" },
-            { "sleep": "query.property('quan:is_sleeping') == true" },
-            { "sit": "query.property('quan:attack_phase') == 0 && query.property('quan:is_sitting') == true" },
-            { "walk": "query.property('quan:attack_phase') == 0 && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)" },
-            { "stand": "query.property('quan:attack_phase') == 0" }
+            {
+              "attack2": "query.property('quan:attack_phase') == 2"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true"
+            },
+            {
+              "sit": "query.property('quan:attack_phase') == 0 && query.property('quan:is_sitting') == true"
+            },
+            {
+              "walk": "query.property('quan:attack_phase') == 0 && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:attack_phase') == 0"
+            }
           ]
         },
         "attack2": {
@@ -73,11 +117,21 @@
             "lover_fox_blink"
           ],
           "transitions": [
-            { "attack1": "query.property('quan:attack_phase') == 1" },
-            { "sleep": "query.property('quan:is_sleeping') == true" },
-            { "sit": "query.property('quan:attack_phase') == 0 && query.property('quan:is_sitting') == true" },
-            { "walk": "query.property('quan:attack_phase') == 0 && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)" },
-            { "stand": "query.property('quan:attack_phase') == 0" }
+            {
+              "attack1": "query.property('quan:attack_phase') == 1"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true"
+            },
+            {
+              "sit": "query.property('quan:attack_phase') == 0 && query.property('quan:is_sitting') == true"
+            },
+            {
+              "walk": "query.property('quan:attack_phase') == 0 && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:attack_phase') == 0"
+            }
           ]
         }
       }

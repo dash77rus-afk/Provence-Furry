@@ -1,0 +1,475 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.lover_npc.move": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "idle",
+            "blink"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "kiss": "query.property('quan:is_kissing') == true"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "dance": "query.property('quan:is_dancing') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "sit": "query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            }
+          ]
+        },
+        "walk": {
+          "animations": [
+            "walk",
+            "blink"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "kiss": "query.property('quan:is_kissing') == true"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "dance": "query.property('quan:is_dancing') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "sit": "query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "stand": "query.property('quan:is_running') != true && query.property('quan:is_moving') != true && query.modified_move_speed <= 0.01 && query.ground_speed <= 0.03"
+            }
+          ]
+        },
+        "sit": {
+          "animations": [
+            "sit",
+            "blink"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "kiss": "query.property('quan:is_kissing') == true"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "dance": "query.property('quan:is_dancing') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_sitting') != true"
+            }
+          ]
+        },
+        "sleep": {
+          "animations": [
+            "sleep_side"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "sit": "query.property('quan:is_sleeping') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_sleeping') != true"
+            }
+          ]
+        },
+        "dance": {
+          "animations": [
+            "dance"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "sit": "query.property('quan:is_dancing') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_dancing') != true"
+            }
+          ]
+        },
+        "hug": {
+          "animations": [
+            "hug"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "dance": "query.property('quan:is_hugging') != true && query.property('quan:is_dancing') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "sit": "query.property('quan:is_hugging') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_hugging') != true"
+            }
+          ]
+        },
+        "heart": {
+          "animations": [
+            "heart"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "hug": "query.property('quan:is_heart') != true && query.property('quan:is_hugging') == true"
+            },
+            {
+              "dance": "query.property('quan:is_heart') != true && query.property('quan:is_dancing') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "sit": "query.property('quan:is_heart') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_heart') != true"
+            }
+          ]
+        },
+        "sleep_back": {
+          "animations": [
+            "sleep_back"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "sit": "query.property('quan:is_sleeping') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_sleeping') != true"
+            }
+          ]
+        },
+        "sleep_curl": {
+          "animations": [
+            "sleep_curl"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "sit": "query.property('quan:is_sleeping') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_sleeping') != true"
+            }
+          ]
+        },
+        "sleep_hugpose": {
+          "animations": [
+            "sleep_hugpose"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "sit": "query.property('quan:is_sleeping') != true && query.property('quan:is_sitting') == true"
+            },
+            {
+              "run": "query.property('quan:is_running') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_sleeping') != true"
+            }
+          ]
+        },
+        "run": {
+          "animations": [
+            "run",
+            "blink"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "heart": "query.property('quan:is_heart') == true"
+            },
+            {
+              "hug": "query.property('quan:is_hugging') == true"
+            },
+            {
+              "dance": "query.property('quan:is_dancing') == true"
+            },
+            {
+              "sleep": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 0"
+            },
+            {
+              "sleep_back": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 1"
+            },
+            {
+              "sleep_curl": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 2"
+            },
+            {
+              "sleep_hugpose": "query.property('quan:is_sleeping') == true && query.property('quan:sleep_pose') == 3"
+            },
+            {
+              "sit": "query.property('quan:is_sitting') == true"
+            },
+            {
+              "walk": "query.property('quan:is_running') != true && (query.property('quan:is_moving') == true || query.modified_move_speed > 0.01 || query.ground_speed > 0.03)"
+            },
+            {
+              "stand": "query.property('quan:is_running') != true && query.property('quan:is_moving') != true && query.modified_move_speed <= 0.01 && query.ground_speed <= 0.03"
+            }
+          ]
+        },
+        "carry": {
+          "animations": [
+            "carry"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "stand": "query.property('quan:is_carrying') != true"
+            }
+          ]
+        },
+        "kiss": {
+          "animations": [
+            "kiss"
+          ],
+          "transitions": [
+            {
+              "carry": "query.property('quan:is_carrying') == true"
+            },
+            {
+              "stand": "query.property('quan:is_kissing') != true"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
