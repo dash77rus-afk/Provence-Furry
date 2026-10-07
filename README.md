@@ -1,5 +1,7 @@
 # Provence Furry — Waifu NPC
 
+![Waifu NPC](image%20(17).jpg)
+
 Minecraft Bedrock addon for **Provence Furry** server.
 
 **GitHub connected** ✅ · Structure: `Waifu_NPC/BP` + `Waifu_NPC/RP`
